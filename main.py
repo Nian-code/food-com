@@ -58,7 +58,7 @@ def insert_data_funcion(df, table):
     df1 = df.loc[1,:]
     b = df1.index.tolist()
     b1 = ",".join(b)
-    df_new = df.loc[:10,b]
+    df_new = df.loc[:,b]
     df_new.apply(lambda x: insert_query(table, b1, tuple(x)), axis=1)
 
 def update_query(table, columns, data, id):
@@ -74,7 +74,7 @@ def update_query(table, columns, data, id):
     mydb.commit()
 
 def update_data(table, df):
-    df = df.loc[:10,:]
+    df = df.loc[:,:]
     df.apply(lambda x: update_query(table, 
     x.index.tolist(), x.values.tolist(), x.id), axis=1)
 
