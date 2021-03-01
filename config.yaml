@@ -1,0 +1,7 @@
+RAW_RECIPES :  "RAW_recipes.csv"
+PP_USERS    :  "PP_users.csv"
+PP_RECIPES  :  "PP_recipes.csv"
+RAW_INTERACTIONS : "RAW_interactions.csv"
+TEST_INTERACTIONS : "interactions_test.csv"
+TRAIN_INTERACTIONS: "interactions_train.csv"
+VALIDATION_INTERACTIONS: "interactions_validation.csv"
